@@ -6,7 +6,9 @@
       "title": "Degradation of service in h2 servers with CONTINUATION Flood",
       "description": "An attacker can send a flood of CONTINUATION frames, causing `h2` to process them indefinitely.\nThis results in an increase in CPU usage.\n\nTokio task budget helps prevent this from a complete denial-of-service, as the server can still\nrespond to legitimate requests, albeit with increased latency.\n\nMore details at \"https://seanmonstar.com/blog/hyper-http2-continuation-flood/.\n\nPatches available for 0.4.x and 0.3.x versions.",
       "date": "2024-04-03",
-      "aliases": [],
+      "aliases": [
+        "GHSA-q6cp-qfwq-4gcv"
+      ],
       "related": [],
       "collection": "crates",
       "categories": [
